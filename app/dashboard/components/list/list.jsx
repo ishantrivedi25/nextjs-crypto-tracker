@@ -30,6 +30,7 @@ function List({ coin, delay }) {
           <td className={styles.tdImg}>
             <Image
               src={coin.image}
+              alt={coin.name}
               width={48}
               height={48}
               className={`${styles.coinImage} ${styles.coinImageTd}`}

@@ -60,7 +60,7 @@ export default function TabsComponent({ coins, setSearch }) {
         </div>
       </TabPanel>
       <TabPanel value="list">
-        <table className={styles.listFlex}>
+        <div className={styles.listFlex}>
           {coins.length > 0 ? (
             coins.map((coin, i) => (
               <List coin={coin} key={i} delay={(i % 8) * 0.2} />
@@ -81,7 +81,7 @@ export default function TabsComponent({ coins, setSearch }) {
               </div>
             </div>
           )}
-        </table>
+        </div>
       </TabPanel>
     </TabContext>
   );
